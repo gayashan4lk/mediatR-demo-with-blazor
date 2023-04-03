@@ -6,6 +6,6 @@ namespace DemoLibrary.DataAccess
     public interface IDataAcess
     {
         List<Person> GetPeople();
-        Person InsertPerson(PersonVM newPerson);
+        Person InsertPerson(PersonViewModel newPerson);
     }
 }

@@ -18,7 +18,7 @@ namespace DemoLibrary.DataAccess
             return people;
         }
 
-        public Person InsertPerson(PersonVM newPerson)
+        public Person InsertPerson(PersonViewModel newPerson)
         {
             Person person = new()
             {
