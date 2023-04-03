@@ -1,9 +1,9 @@
-﻿using DemoLibrary.DataAccess;
-using DemoLibrary.Models;
-using DemoLibrary.Queries;
+﻿using Core.DataAccess;
+using Core.Models;
+using Core.Queries;
 using MediatR;
 
-namespace DemoLibrary.Handlers
+namespace Core.Handlers
 {
     public class GetPersonListHandler : IRequestHandler<GetPersonListQuery, List<Person>>
     {
