@@ -1,7 +1,7 @@
-﻿using DemoLibrary.Models;
-using DemoLibrary.ViewModels;
+﻿using Core.Models;
+using Core.ViewModels;
 
-namespace DemoLibrary.DataAccess
+namespace Core.DataAccess
 {
     public class DemoDataAcess : IDataAcess
     {

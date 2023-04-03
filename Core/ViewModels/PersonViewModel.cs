@@ -1,4 +1,4 @@
-﻿namespace DemoLibrary.ViewModels
+﻿namespace Core.ViewModels
 {
     public class PersonViewModel
     {

@@ -1,7 +1,7 @@
-﻿using DemoLibrary.Models;
+﻿using Core.Models;
 using MediatR;
 
-namespace DemoLibrary.Queries
+namespace Core.Queries
 {
     public record GetPersonListQuery : IRequest<List<Person>>;
 

@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DemoLibrary\BlazorUI.Application.csproj" />
+    <ProjectReference Include="..\Core\BlazorUI.Application.csproj" />
   </ItemGroup>
 
 </Project>

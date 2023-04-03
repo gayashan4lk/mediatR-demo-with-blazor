@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33513.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorUI", "BlazorUI\BlazorUI.csproj", "{B71DF7D3-2502-4CA8-91BA-96622EBF4D00}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorUI.Application", "Core\BlazorUI.Application.csproj", "{998A49D6-B676-4782-9746-B7664F07F8D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B71DF7D3-2502-4CA8-91BA-96622EBF4D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B71DF7D3-2502-4CA8-91BA-96622EBF4D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B71DF7D3-2502-4CA8-91BA-96622EBF4D00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{998A49D6-B676-4782-9746-B7664F07F8D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{998A49D6-B676-4782-9746-B7664F07F8D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{998A49D6-B676-4782-9746-B7664F07F8D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{998A49D6-B676-4782-9746-B7664F07F8D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

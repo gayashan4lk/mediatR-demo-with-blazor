@@ -1,4 +1,4 @@
-﻿namespace DemoLibrary.Models
+﻿namespace Core.Models
 {
     public class Person
     {

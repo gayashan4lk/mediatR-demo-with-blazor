@@ -1,6 +1,6 @@
 using BlazorUI.Data;
-using DemoLibrary;
-using DemoLibrary.DataAccess;
+using Core;
+using Core.DataAccess;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
