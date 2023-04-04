@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BlazorUI.Application.Handlers
 {
-    internal class GetPersonByIdHandler : IRequestHandler<GetPersonByIdQuery, Person>
+    public class GetPersonByIdHandler : IRequestHandler<GetPersonByIdQuery, Person>
     {
         private readonly IDataAcess _data;
 

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BlazorUI.Application.Handlers
 {
-    internal class InsertPersonCommandHandler : IRequestHandler<InsertPersonCommand, Person>
+    public class InsertPersonCommandHandler : IRequestHandler<InsertPersonCommand, Person>
     {
         private readonly IDataAcess _data;
 
