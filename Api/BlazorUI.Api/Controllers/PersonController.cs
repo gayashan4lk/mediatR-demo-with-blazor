@@ -1,6 +1,8 @@
-﻿using BlazorUI.Application.Queries;
+﻿using BlazorUI.Application.Commands;
+using BlazorUI.Application.Queries;
 using Core.Models;
 using Core.Queries;
+using Core.ViewModels;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -34,8 +36,9 @@ namespace BlazorUI.Api.Controllers
 
         // POST api/<PersonController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<Person> Post([FromBody] PersonViewModel personVM)
         {
+            return await _mediator.Send(new InsertPersonCommand(personVM));
         }
 
         // PUT api/<PersonController>/5

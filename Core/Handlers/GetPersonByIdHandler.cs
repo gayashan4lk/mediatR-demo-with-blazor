@@ -20,13 +20,13 @@ namespace BlazorUI.Application.Handlers
         }
         public async Task<Person> Handle(GetPersonByIdQuery request, CancellationToken cancellationToken)
         {
-            if (request.id < 0)
+            if (request.Id < 0)
             {
                 return new Person();
             }
 
             var people = await Task.Run(() => _data.GetPeople());
-            var person = people.FirstOrDefault(x => x.Id == request.id);
+            var person = people.FirstOrDefault(x => x.Id == request.Id);
             return person;
         }
     }
