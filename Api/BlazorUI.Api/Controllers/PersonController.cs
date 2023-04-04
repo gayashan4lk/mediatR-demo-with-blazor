@@ -1,4 +1,5 @@
-﻿using Core.Models;
+﻿using BlazorUI.Application.Queries;
+using Core.Models;
 using Core.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -21,15 +22,14 @@ namespace BlazorUI.Api.Controllers
         [HttpGet]
         public async Task<List<Person>> Get()
         {
-            var people = await _mediator.Send(new GetPersonListQuery());
-            return people;
+            return await _mediator.Send(new GetPersonListQuery());
         }
 
         // GET api/<PersonController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<Person> Get(int id)
         {
-            return "value";
+            return await _mediator.Send(new GetPersonByIdQuery(id));
         }
 
         // POST api/<PersonController>
